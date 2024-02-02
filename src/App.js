@@ -7,7 +7,7 @@ import { PERSON_LOGIN } from '../src/pages/login'
 import { useSubscription } from "@apollo/client";
 
 function App() {
-  const { data, loading } = useSubscription(PERSON_LOGIN,)
+  const { data } = useSubscription(PERSON_LOGIN,)
 console.log(data?.personLogin)
   return (
     <div className="App">

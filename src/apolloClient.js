@@ -4,15 +4,17 @@ import { setContext } from "@apollo/client/link/context";
 import { GraphQLWsLink } from "@apollo/client/link/subscriptions";
 import { createClient } from "graphql-ws";
 
+
 const wsLink = new GraphQLWsLink(
   createClient({
-    url: "ws://localhost:4000/graphql",
+    url: process.env.REACT_APP_API_SUB,
   }),
 );
 
+console.log(process.env.API_SUB)
 
 const httpLink = new HttpLink({
-  uri: "http://localhost:4000/graphql",
+  uri:  process.env.REACT_APP_API,
 });
 
 const authLink =  setContext((_, { headers }) => {
