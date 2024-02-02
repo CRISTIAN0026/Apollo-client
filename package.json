@@ -11,6 +11,7 @@
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^13.5.0",
         "dotenv": "^16.4.1",
+        "graphql": "^16.8.1",
         "graphql-tag": "^2.12.6",
         "graphql-ws": "^5.14.3",
         "jsonwebtoken": "^9.0.2",
